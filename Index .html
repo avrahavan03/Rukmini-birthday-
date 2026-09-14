@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,viewport-fit=cover">
+<title>For Rukmini ❤️</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Inter:wght@400;500;600;700&family=Parisienne&display=swap');
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{width:100%;height:100%;overflow:hidden}
+body{font-family:Inter,sans-serif;color:#fff;background:#10091d}
+.app{position:relative;width:100%;height:100%;overflow:hidden;background:
+radial-gradient(circle at 15% 15%,#ff8fb844 0 2%,transparent 28%),
+radial-gradient(circle at 85% 80%,#a875ff44 0 2%,transparent 30%),
+linear-gradient(145deg,#11081e,#28102f 52%,#15091f)}
+.app:before{content:"";position:absolute;inset:0;background:linear-gradient(115deg,transparent 30%,#fff1 50%,transparent 70%);transform:translateX(-100%);animation:shine 9s infinite}
+.screen{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;padding:24px 20px;opacity:0;visibility:hidden;transform:translateY(25px) scale(.98);transition:all .7s cubic-bezier(.2,.8,.2,1);z-index:2}
+.screen.active{opacity:1;visibility:visible;transform:none}
+.card{width:min(720px,100%);text-align:center}
+.kicker{font-size:.78rem;letter-spacing:.22em;text-transform:uppercase;opacity:.7;margin-bottom:12px}
+h1,h2{font-family:"DM Serif Display",serif;font-weight:400}
+h1{font-size:clamp(3rem,13vw,6.8rem);line-height:.95}
+h2{font-size:clamp(2rem,9vw,4rem);line-height:1.05;margin-bottom:14px}
+p{font-size:clamp(1rem,4.2vw,1.25rem);line-height:1.7;color:#fffddfdd}
+.script{font-family:Parisienne,cursive;font-size:clamp(2.5rem,12vw,5rem)}
+.btn{border:1px solid #ffffff55;background:#ffffff18;color:#fff;padding:15px 24px;border-radius:50px;font-weight:700;font-size:1rem;margin-top:24px;backdrop-filter:blur(12px);box-shadow:0 12px 40px #0004;transition:.25s}
+.btn:active{transform:scale(.96)}
+.eyebrow{display:inline-block;padding:8px 13px;border:1px solid #fff3;border-radius:99px;background:#fff1;font-size:.75rem;letter-spacing:.1em;margin-bottom:18px}
+.giftWrap{width:180px;height:180px;margin:0 auto 18px;display:grid;place-items:center;position:relative}
+.gift{font-size:8rem;filter:drop-shadow(0 20px 20px #0008);animation:bob 2.8s ease-in-out infinite}
+.glow{position:absolute;width:130px;height:130px;border-radius:50%;background:#ff9fcf33;filter:blur(18px);z-index:-1}
+.badge{margin:20px auto 0;display:flex;justify-content:center;gap:7px}
+.badge i{width:6px;height:6px;border-radius:50%;background:#fff6}
+.badge i.on{width:20px;border-radius:10px;background:#fff}
+.photoFrame{position:relative;width:min(88vw,390px);height:min(56vh,480px);margin:0 auto 18px;padding:9px;background:#fff;border-radius:4px;box-shadow:0 25px 60px #0009;transform:rotate(-2deg)}
+.photoFrame:after{content:"";position:absolute;inset:0;border:1px solid #0001;pointer-events:none}
+.photoFrame img{width:100%;height:100%;object-fit:cover;display:block}
+.photoLabel{color:#291a2b;font-family:Parisienne,cursive;font-size:1.7rem;margin-top:6px}
+.memories{position:relative}
+.tapHint{font-size:.8rem;opacity:.65;margin-top:8px}
+.letterCard{max-height:75vh;overflow:auto;text-align:left;padding:28px;border:1px solid #fff2;border-radius:28px;background:#ffffff10;backdrop-filter:blur(18px);box-shadow:0 20px 70px #0005}
+.letterCard h2{text-align:center}
+.letterCard p{font-size:1rem}
+.signature{font-family:Parisienne,cursive;font-size:2.5rem;text-align:right;margin-top:18px}
+.finalHeart{font-size:7rem;filter:drop-shadow(0 15px 30px #ff6aa866);animation:heart 1.5s infinite}
+.confetti{position:absolute;inset:0;z-index:10;pointer-events:none;overflow:hidden}
+.confetti span{position:absolute;top:-30px;width:7px;height:14px;background:#fff;animation:fall 4s linear infinite}
+.footer{position:absolute;bottom:18px;left:0;right:0;text-align:center;z-index:5;font-size:.7rem;opacity:.35}
+@keyframes bob{50%{transform:translateY(-12px) rotate(2deg)}}
+@keyframes heart{50%{transform:scale(1.12)}}
+@keyframes fall{to{transform:translateY(110vh) rotate(720deg)}}
+@keyframes shine{50%,100%{transform:translateX(100%)}}
+@media(max-height:700px){.photoFrame{height:47vh}.letterCard{max-height:68vh}.giftWrap{height:130px}.gift{font-size:6rem}}
+</style>
+</head>
+<body>
+<div class="app">
+
+<section class="screen active" id="s1">
+<div class="card">
+<div class="kicker">A little something for you</div>
+<div class="giftWrap"><div class="glow"></div><div class="gift">🎁</div></div>
+<div class="script">Hey Rukmini…</div>
+<p style="margin-top:10px">I made a tiny corner of the internet just for your birthday.</p>
+<button class="btn" onclick="next()">Open your surprise ✨</button>
+</div>
+</section>
+
+<section class="screen" id="s2">
+<div class="card">
+<div class="eyebrow">15 September · Your day</div>
+<h1>Happy Birthday<br><span style="font-size:.68em">Rukmini Sarma</span> 🎂</h1>
+<p style="margin-top:22px">Stay happy and healthy always. ❤️</p>
+<button class="btn" onclick="next()">See your memories →</button>
+</div>
+</section>
+
+<section class="screen memories" id="s3">
+<div class="card">
+<div class="kicker">A few moments</div>
+<h2>Memories 📸</h2>
+<div class="photoFrame">
+<img id="photo" src="photo1.jpeg" alt="Memory">
+<div class="photoLabel" id="photoLabel">A little smile</div>
+</div>
+<div class="badge"><i class="on"></i><i></i><i></i></div>
+<div class="tapHint">Photos change automatically</div>
+<button class="btn" onclick="next()">A message for you →</button>
+</div>
+</section>
+
+<section class="screen" id="s4">
+<div class="card">
+<div class="letterCard">
+<div class="kicker" style="text-align:center">From the heart</div>
+<h2>A little message 💌</h2>
+<p>
+Happy birthday! 🎉<br><br>
+Stay happy and healthy always.<br><br>
+I will always pray for your financial and mental well-being. I genuinely hope this year brings you peace, happiness, stability and many beautiful moments.<br><br>
+May this new year of your life be kind to you, and may you always have reasons to smile.<br><br>
+Take care of yourself and keep being you. ❤️
+</p>
+<div class="signature">— with warm wishes ✨</div>
+</div>
+<button class="btn" onclick="next()">One last surprise 🎁</button>
+</div>
+</section>
+
+<section class="screen" id="s5">
+<div class="card">
+<div class="finalHeart">❤️</div>
+<div class="kicker">And finally…</div>
+<h1 style="font-size:clamp(2.7rem,11vw,5.8rem)">HAPPY<br>BIRTHDAY!</h1>
+<div class="script" style="margin-top:12px">Rukmini</div>
+<p style="margin-top:15px">May this year be gentle, bright and full of beautiful moments. ✨</p>
+</div>
+</section>
+
+<div class="confetti" id="confetti"></div>
+<div class="footer" id="footer">01 / 05</div>
+</div>
+
+<script>
+let current=1,photoIndex=0;
+const photos=[
+ ["photo1.jpeg","A little smile"],
+ ["photo2.jpeg","A beautiful moment"],
+ ["photo3.jpeg","Keep smiling ❤️"]
+];
+const screens=document.querySelectorAll(".screen");
+function updateFooter(){document.getElementById("footer").textContent=String(current).padStart(2,"0")+" / 05"}
+function next(){
+ screens[current-1].classList.remove("active");
+ current=Math.min(current+1,5);
+ screens[current-1].classList.add("active");
+ updateFooter();
+ if(current===5) makeConfetti();
+}
+function showPhoto(){
+ photoIndex=(photoIndex+1)%photos.length;
+ document.getElementById("photo").src=photos[photoIndex][0];
+ document.getElementById("photoLabel").textContent=photos[photoIndex][1];
+ document.querySelectorAll(".badge i").forEach((x,i)=>x.classList.toggle("on",i===photoIndex));
+}
+setInterval(()=>{if(current===3)showPhoto()},4000);
+function makeConfetti(){
+ const box=document.getElementById("confetti");box.innerHTML="";
+ for(let i=0;i<90;i++){
+  const s=document.createElement("span");
+  s.style.left=Math.random()*100+"%";
+  s.style.animationDelay=(Math.random()*2.5)+"s";
+  s.style.animationDuration=(3+Math.random()*3)+"s";
+  s.style.transform="rotate("+Math.random()*360+"deg)";
+  box.appendChild(s);
+ }
+}
+updateFooter();
+</script>
+</body>
+</html>
